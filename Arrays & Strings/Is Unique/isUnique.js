@@ -60,7 +60,7 @@ const isUnique = str => {
         }
     }
 
-    return false
+    return true
 }
 
 

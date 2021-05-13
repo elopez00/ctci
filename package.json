@@ -1,0 +1,33 @@
+{
+  "name": "ctci",
+  "version": "1.0.0",
+  "description": "Cracking the Coding Interview Questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "deploy": "npm run test && git add . && git status && git commit -m \"commit: && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/elopez00/ctci"
+  },
+  "keywords": [
+    "cracking",
+    "the",
+    "coding",
+    "interview"
+  ],
+  "author": "Eddie Lopez",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "CI=true npm run test"
+    }
+  }
+}

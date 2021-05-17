@@ -8,5 +8,5 @@ test("\"Mr John Smith         \" to output \"Mr%20John%20Smith\"", () => {
 
 test("\"     test   this\" to output \"test%20this\"", () => {
     expect(URLify("     test   this")).toBe("test%20this")
-    expect(URLifyJS("     test   this")).toBe("test%20%20this")
+    expect(URLifyJS("     test   this")).toBe("test%20%20%20this")
 })
